@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Variables */
+
+:root{
+    --primario: #881f9d;
+    --primarioOscruro: #500c66;
+    --secundario: #ffce00;
+    --secundarioOscuro: rgb(233,187,2);
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePrincipal:"Poppins", sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Logo  */
+
+.logopag{
+    width: 110%;
+    transition: all 0.3s;
+}
+
+.logopag:hover{
+    transform: scale(1.1);
+}
+
+.navbar-brand{
+    width: 100px;
+}
+
+@media (max-width: 990px) {
+    .container-fluid{
+        margin-top: -20px;
+    }
+}
+
+/* Barra navegacion  */
+
+.navbar {
+     background-color: #FFFFFF;
+     height: 100px;
+     margin: 30px;
+     border-radius: 16px;
+     padding: 1rem;
+     box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.boton-login{
+    background-color: #881f9d;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color
+    ;
+}
+
+.boton-login:hover{
+    background-color: #500c66;
+}
+
+
+.nav-link{
+    color: gray;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover , .nav-link.active{
+    color: #000;
+}
+
+/* EFECTO BARRA NAVEGACION  SOLO CUANDO TENGA UN MIN : DE 991PX */
+
+@media (min-width: 991px) {
+
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #881f9d;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before , .nav-link.nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+/* MAIN */
+
+.main{
+    background: url(http://localhost/centuryejemplo/resources/img/bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.main::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.main h1{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.main h2{
+    font-size: 1.2rem;
+}
+
+.sec2{
+    margin-top: 200px;
+}
+
+/* Productos */
+
+.titprodu{
+    margin-left: 290px;
+    margin-bottom: 100px;
+}
+
+.container{
+    height: 1000px;
+    margin-bottom: 200px;
+}
+.row{
+    gap: 60px;
+}
+
+.col{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);   /* <-- Sombra con blur */
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.imgproducto{
+    width: 75%;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.imgproducto:hover{
+    transform: scale(1.2);
+}
+
+.info{
+    font-family: var(--fuentePrincipal);
+    line-height: 2;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    transition: all .2s;
+}
+
+.info span{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+    transition: all .2s;
+}
+
+.info:hover{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+.info span:hover{
+    font-size: 18px;
+}
+
+.col a{
+    border: none;
+    background: none;
+    background-color: black;
+    color: #fff;
+    padding: 8px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.col a:hover{
+    background-color: var(--primario);
+    color: #ffffff;
+    padding: 9px 51px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE GRID PRODUCTOS */
+ 
+@media (max-width: 1399px) {
+    .row{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .row{
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .row{
+        margin-left: 100px;
+    }
+}
+
+
+/* CARROUSEL IMAGENES */
+
+.container-carousel{
+    margin-left: 100px;
+}
+
+.carousel{
+    margin-bottom: 700px;
+    margin-left: 200px;
+}
+
+.carousel-inner{
+    height: 900px;
+    width: 1320px;
+    border-radius: 10px;
+}
+
+/* Slider Marcas */
+
+.marca{
+    font-family: var(--fuentePrincipal);
+    margin: 300px 0;
+    text-align: center;
+  }
+
+  .slider{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 18rem;
+    margin-bottom: 20rem;
+    border-radius: .7rem;
+  }
+
+  .slider .slider-movimiento{
+    display: flex;
+    gap: 5rem;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite ;
+    width: calc(20rem * 10);
+  }
+
+  .slider .slide{
+    width: 20rem;
+  }
+
+  .slider .slide img{
+    width: 100%;
+  }
+
+  @keyframes scroll {
+    0%{
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100%{
+      -webkit-transform: translateX(calc(-20rem * 6));
+      transform: translateX(calc(-20rem * 6));
+    }
+  }
+
+  /* RESPONSIVE DEL SLIDER MARCAS */
+
+  @media (max-width:1367px) {
+    .marca{
+        margin-top: 300px;
+    }
+    .slider{
+        margin-top: 100px;
+      }
+  }
+
+  @media (max-width:1399px) {
+    .marca{
+        margin-top: 700px;
+    }
+    .slider{
+        margin-top: 50px;
+      }
+  }
+
+  @media (max-width:1199px) {
+    .marca{
+        margin-top: 2200px;
+    }
+    .slider{
+        margin-top: 100px;
+      }
+  }
