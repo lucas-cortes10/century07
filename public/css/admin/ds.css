@@ -1,0 +1,183 @@
+/* Logo  */
+
+.logopag{
+    width: 80%;
+    transition: all 0.3s;
+}
+
+.logopag:hover{
+    transform: scale(1.1);
+}
+
+.navbar-brand{
+    width: 100px;
+}
+
+
+/* Navegacion */
+
+
+.navbar {
+    background-color: #FFFFFF;
+    height: 100px;
+    margin: 30px;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+
+.nav-link{
+   color: gray;
+   font-weight: 500;
+   position: relative;
+}
+
+.nav-link:hover {
+   color: #000;
+}
+
+.navbar-nav a:hover{
+    transition: all .5s;
+}
+
+.navbar-nav a:hover{
+    color: #881f9d;
+    font-size: 17px;
+}
+
+.active{
+    color: #881f9d;/* El link que este activo se pone de color */
+}
+
+/* Lista Funcionalidades */
+
+.lista{
+    margin-top: 220px;
+    margin-left: 50px;
+    height: 100vh;
+}
+
+.lista li{
+    font-size: 16px;
+}
+
+.funcionalidades li a{
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+.icons{
+    transition: all .5s;
+}
+
+.icons:hover{
+    color: #881f9d;
+}
+
+.funcionalidades li a:hover{
+    color: #881f9d;
+}
+
+/* CONTENIDO */
+
+.container-fluid{
+    width: 90%;
+}
+
+.Contenido{
+    margin-left: 500px; 
+    margin-top: -980px;
+}
+
+.Contenido h2{
+    margin-left: 0px;
+    margin-bottom: 100px;
+}
+
+.cartas{
+   display: flex;
+}
+
+.card{
+    margin-right: 80px;
+    transition: all .5s;
+}
+
+.card:hover{
+    margin-right: 80px;
+   font-size: 18px;
+}
+
+.card1{
+    background-color: rgb(10, 107, 31);
+}
+
+.card2{
+    background-color: #881f9d;
+}
+
+.card3{
+    background-color: rgb(175, 21, 21);
+}
+
+/* Respo0nsive */
+
+@media (max-width: 1566px) {
+    .card{
+        width: 90%;
+    }
+}
+
+/* Paginas Actualizar y eliminar */
+
+.eliminar{
+    color: red;
+    transition: all .5s;
+    font-size: 18px;
+}
+
+.actualizar{
+    color: rgb(241, 183, 25);
+    transition: all .5s;
+    font-size: 18px;
+}
+
+.eliminar:hover{
+   color: #881f9d;
+   font-size: 19px;
+}
+
+.actualizar:hover{
+    color: #881f9d;
+    font-size: 19px;
+ }
+
+/* 
+Pagina proveedores */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0;                                      /*   <--- Elimina las flechas del imput type Number */
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.prove{
+    color: #881f9d;
+}
+.btn-form{
+    border: 1px white;
+    background-color: #881f9d;
+    transition: all .5s;
+}
+
+
+.btn-form:hover{
+    background-color: #c99431;
+    color: #000;
+    transform: scale(1.1);
+}

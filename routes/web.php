@@ -34,6 +34,10 @@ Route::get('compra', function () {
     return view('compra');
 });
 
+Route::get('admin', function () {
+    return view('ds');
+});
+
 
 
 
