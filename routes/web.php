@@ -57,6 +57,10 @@ Route::get('actualizarproovedor', function () {
     return view('admin/proovedores/actualizaryeliminarproveedor');
 });
 
+Route::get('devoluciones', function () {
+    return view('admin/devoluciones/devoluciones');
+});
+
 
 
 
