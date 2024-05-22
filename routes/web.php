@@ -53,6 +53,10 @@ Route::get('registrarproovedor', function () {
     return view('admin/proovedores/registrarproovedor');
 });
 
+Route::get('actualizarproovedor', function () {
+    return view('admin/proovedores/actualizaryelliminarproovedor');
+});
+
 
 
 
