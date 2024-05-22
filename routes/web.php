@@ -36,6 +36,7 @@ Route::get('compra', function () {
 
 
 //Rutas Administrador
+
 Route::get('admin', function () {
     return view('admin/ds');
 });
