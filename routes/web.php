@@ -26,23 +26,12 @@ Route::get('iniciosesion', function () {
     return view('iniciosesion');
 });
 
-Route::get('cursos', function () {
-    return "Bienvenido a Cursos";
+Route::get('registro', function () {
+    return view('registro');
 });
 
-Route::get('cursos/create', function () {
-    return "En esta pagina puedes crear un Curso";
-});
 
-// Route::get('cursos/{curso}', function ($curso) {
-//     return "Bienvenido al Curso: $curso";
-// });
 
-Route::get('cursos/{curso}/{categoria?}', function ($curso , $categoria = null) {
-    if ($categoria) {
-        return "Bienvenido al curso $curso, de la categoria $categoria";
-    }else{
-        return "Bienvenido al Curso: $curso";
-    }
-    
-});
+
+
+

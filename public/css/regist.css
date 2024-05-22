@@ -1,0 +1,90 @@
+body{
+    background: rgb(18,15,20);
+background: linear-gradient(96deg, rgba(18,15,20,1) 0%, rgba(76,20,103,1) 44%, rgba(54,46,49,1) 97%);
+}
+
+/* Logo  */
+
+.logopag{
+    width: 110%;
+    transition: all 0.3s;
+}
+
+.logopag:hover{
+    transform: scale(1.1);
+}
+
+.navbar-brand{
+    width: 100px;
+}
+
+@media (max-width: 990px) {
+    .container-fluid{
+        margin-top: -20px;
+    }
+}
+
+/* Barra navegacion  */
+
+.navbar {
+     background-color: #FFFFFF;
+     height: 100px;
+     margin: 30px;
+     border-radius: 16px;
+     padding: 1rem;
+     box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.boton-login{
+    background-color: #881f9d;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color
+    ;
+}
+
+.boton-login:hover{
+    background-color: #500c66;
+}
+
+
+.nav-link{
+    color: gray;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover , .nav-link.active{
+    color: #000;
+}
+
+/* EFECTO BARRA NAVEGACION  SOLO CUANDO TENGA UN MIN : DE 991PX */
+
+@media (min-width: 991px) {
+
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #881f9d;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before , .nav-link.nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+.contain{
+    margin-top: 200px;
+}
