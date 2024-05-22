@@ -30,6 +30,9 @@ Route::get('registro', function () {
     return view('registro');
 });
 
+Route::get('compra', function () {
+    return view('compra');
+});
 
 
 
