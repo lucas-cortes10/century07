@@ -44,6 +44,9 @@ Route::get('registrarproductos', function () {
     return view('admin/productos/registrarproductos');
 });
 
+Route::get('actualizarproductos', function () {
+    return view('admin/productos/actualizaryeliminarproductos');
+});
 
 
 
