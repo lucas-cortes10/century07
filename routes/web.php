@@ -34,9 +34,17 @@ Route::get('compra', function () {
     return view('compra');
 });
 
+
+//Rutas Administrador
 Route::get('admin', function () {
     return view('admin/ds');
 });
+
+Route::get('registrarproductos', function () {
+    return view('registrarprodcutos');
+});
+
+
 
 
 
