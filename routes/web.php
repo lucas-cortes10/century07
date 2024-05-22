@@ -49,6 +49,10 @@ Route::get('actualizarproductos', function () {
     return view('admin/productos/actualizaryeliminarproductos');
 });
 
+Route::get('registrarproovedor', function () {
+    return view('admin/proovedor/registrarproovedor');
+});
+
 
 
 
