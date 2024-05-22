@@ -50,7 +50,7 @@ Route::get('actualizarproductos', function () {
 });
 
 Route::get('registrarproovedor', function () {
-    return view('admin/proovedor/registrarproovedor');
+    return view('admin/proovedores/registrarproovedor');
 });
 
 
