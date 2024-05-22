@@ -41,7 +41,7 @@ Route::get('admin', function () {
 });
 
 Route::get('registrarproductos', function () {
-    return view('registrarprodcutos');
+    return view('admin/productos/registrarproductos');
 });
 
 
