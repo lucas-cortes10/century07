@@ -1,0 +1,17 @@
+body{
+    background: rgb(18,15,20);
+    background: linear-gradient(96deg, rgba(18,15,20,1) 0%, rgba(76,20,103,1) 44%, rgba(54,46,49,1) 97%);
+  }
+  
+  .title{
+    margin-top: 300px;
+  }
+  .productos{
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  
+  .produ{
+    background-color: #fff;
+  } 
+  

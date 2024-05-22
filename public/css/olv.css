@@ -1,0 +1,20 @@
+body{
+    background: rgb(18,15,20);
+background: linear-gradient(96deg, rgba(18,15,20,1) 0%, rgba(76,20,103,1) 44%, rgba(54,46,49,1) 97%);
+}
+
+
+.bg{
+    background-image: url(../img/5.jpg);
+    background-position: center center;
+}
+
+.container{
+    margin-top: 150px;
+}
+
+.uno{
+    text-align: center;
+    color: #1a2537;
+    font-size: 19px;
+}

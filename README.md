@@ -1,2 +1,6 @@
 # Century Team Scrum 7
- Proyecto Laravel
+ Proyecto Laravel :
+ Laura Porras ,
+ Mateo Galindo,
+ Christopher Cardenas,
+ Lucas Cortes
