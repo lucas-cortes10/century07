@@ -54,7 +54,7 @@ Route::get('registrarproovedor', function () {
 });
 
 Route::get('actualizarproovedor', function () {
-    return view('admin/proovedores/actualizaryelliminarproovedor');
+    return view('admin/proovedores/actualizaryeliminarproveedor');
 });
 
 
