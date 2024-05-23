@@ -38,6 +38,10 @@ Route::get('error404', function () {
     return view('error400');
 });
 
+Route::get('error500', function () {
+    return view('error500');
+});
+
 
 //Rutas Administrador
 
