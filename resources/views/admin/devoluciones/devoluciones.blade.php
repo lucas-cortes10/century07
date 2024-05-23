@@ -27,7 +27,7 @@
 
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand me-auto logoa" href="../ds.html"><img src="../img/5.png" alt="" class="logopag"></a>
+                    <a class="navbar-brand me-auto logoa" href="../ds.html"><img src="{{ asset('img/marcas/5.png')}}"" alt="" class="logopag"></a>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
