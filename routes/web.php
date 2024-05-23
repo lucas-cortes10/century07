@@ -34,6 +34,10 @@ Route::get('compra', function () {
     return view('compra');
 });
 
+Route::get('error404', function () {
+    return view('error400');
+});
+
 
 //Rutas Administrador
 
