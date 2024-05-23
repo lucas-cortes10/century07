@@ -21,7 +21,7 @@
 
             <div class="col-md-2 col-lg-2 col-xl-3 mb-4"> 
                 <h2 class="fw-bold text-center py-5">Productos</h2>
-                <img src="img/productos/grafi.png" alt="" class="imgproducto">
+                <img src="{{ asset('img/productos/grafi.png')}}" alt="" class="imgproducto">
                     <div class="info">
                     <p>Tarjeta de Video RTX 3050 8GB</p>
                     <span>$1.000.000</span>
