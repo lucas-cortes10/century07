@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top"> <!-- Minetras la pantalla tenga un minimo de ancho este se AGRANDA -->
         <div class="container-fluid">
-            <a class="navbar-brand me-auto logoa" href=""><img src="http://localhost/centuryejemplo/resources/img/5.png" alt="" class="logopag"></a>
+            <a class="navbar-brand me-auto logoa" href=""><img src="{{ asset('img/marcas/5.png')}}" alt="" class="logopag"></a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
