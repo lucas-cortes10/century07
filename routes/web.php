@@ -34,6 +34,14 @@ Route::get('compra', function () {
     return view('compra');
 });
 
+Route::get('productos', function () {
+    return view('producto');
+});
+
+Route::get('olvicontraseña', function () {
+    return view('olvidarpass');
+});
+
 Route::get('error404', function () {
     return view('error400');
 });
